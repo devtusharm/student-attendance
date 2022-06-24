@@ -1,0 +1,16 @@
+fieldset {
+    background-color: #eeeeee;
+    padding:20px;
+  }
+  fieldset label{
+    padding:20px;
+  }
+  legend {
+    background-color: gray;
+  }
+
+  legend span{
+    color: white;
+    padding: 5px 10px;
+    display: block;
+  }

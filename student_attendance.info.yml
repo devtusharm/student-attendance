@@ -1,0 +1,5 @@
+name: Student Attendance
+description: Used for marking attendance in a school
+type: module
+package: Custom
+core_version_requirement: ^8.7.7 || ^9 

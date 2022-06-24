@@ -1,0 +1,13 @@
+student_attendance.library:
+   version: 1.x
+   css:
+     base:
+       css/bootstrap.min.css: {}
+       css/attendance-style.css: {}
+   js:
+       js/bootstrap.min.js: {}
+       js/attendance.js: {}
+   dependencies:
+     - core/jquery
+     - core/drupal
+     - core/drupal.dialog.ajax

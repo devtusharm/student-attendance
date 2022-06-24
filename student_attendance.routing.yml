@@ -1,0 +1,16 @@
+student_attendance.form:
+  path: '/students/attendance'
+  defaults:
+    _form: 'Drupal\student_attendance\Form\StudentAttendanceForm'
+    _title: 'Student Attendance Form'
+  requirements:
+   #_permission: 'access content'
+    _role: 'administrator'
+    
+student_attendance.list:
+  path: 'students/attendance/{date}'
+  defaults:
+    _controller: 'Drupal\student_attendance\Controller\StudentAttendanceController::list'
+    _title: 'Student attendance list'
+  requirements:
+   _permission: 'access content'
