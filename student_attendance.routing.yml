@@ -4,8 +4,8 @@ student_attendance.form:
     _form: '\Drupal\student_attendance\Form\StudentAttendanceForm'
     _title: 'Student Attendance Form'
   requirements:
-    _permission: 'access content'
-    #_role: 'administrator'
+    #_permission: 'access content'
+    _role: 'administrator'
 
 student_attendance.list:
   path: '/students/attendance/{adate}/{aclass}/{asection}'
@@ -14,3 +14,12 @@ student_attendance.list:
     _controller: '\Drupal\student_attendance\Controller\StudentAttendanceController::list'
   requirements:
    _permission: 'access content'
+
+student_attendance.settings:
+  path: '/admin/config/student/attendance/settings'
+  defaults:
+   _form: '\Drupal\student_attendance\Form\StudentAttendanceConfigurationForm'
+   _title: 'Student Attendance Settings Form'
+  requirements:
+   #_permission: 'administer site configuration'
+   _role: 'administrator'
